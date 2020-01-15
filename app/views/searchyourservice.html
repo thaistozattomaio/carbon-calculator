@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Calculate a service carbon footprint
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="login.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Check if you can reuse information</h1>
+
+      <form class="form" action="checkexistinginfo" method="post">
+
+        <p> There may be existing information about your service and/or organisation that can be reused for this calculation. This means you would have to provide less input.
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Type in key words to search for your service and/or organisation.
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <button class="govuk-button" data-module="govuk-button">
+            Search
+          </button>
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="">
+            Skip
+          </button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Your service's carbon footprint
+      </h1>
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <div class="govuk-panel__body">
+          Your service 'Apply for a barking permit' emits per year<br>
+          <br>
+        </div>
+        <h1 class="govuk-panel__title">
+          XXX tonnes of CO2
+        </h1>
+      </div>
+      <br>
+      <p>That is 105% your target impact, and higher than 87% of UK government services. See your breakdown below.
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="#">Energy</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">People</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Buldings</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Travel</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Communications</a>
+          </li>
+        </ul>
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+      <h2 class="govuk-heading-l">
+          Energy
+          </h2>
+
+          <table class="govuk-table">
+
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Category</th>
+          <th scope="col" class="govuk-table__header">What you spend</th>
+          <th scope="col" class="govuk-table__header">National average</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">[variable 1]</th>
+          <td class="govuk-table__cell">104 tonnes per year</td>
+          <td class="govuk-table__cell">76 tonnes per year</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">[variable 2]</th>
+          <td class="govuk-table__cell">35 tonnes per year</td>
+          <td class="govuk-table__cell">40 tonnes per year</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">[variable 3]</th>
+          <td class="govuk-table__cell">50 tonnes</td>
+          <td class="govuk-table__cell">4 tonnes</td>
+        </tr>
+      </tbody>
+    </table>
+        <p> We have used average data to produce this calculation. If you think you can provide more accurate data, you can <a href=#>refine your calculation</a>.</p>
+        <a class="govuk-link" href="#">See how you can improve</a>
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+        <h2 class="govuk-heading-l">
+            People
+            </h2>
+
+            <table class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Category</th>
+            <th scope="col" class="govuk-table__header">What you spend</th>
+            <th scope="col" class="govuk-table__header">National average</th>
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">[variable 1]</th>
+            <td class="govuk-table__cell">104 tonnes per year</td>
+            <td class="govuk-table__cell">76 tonnes per year</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">[variable 2]</th>
+            <td class="govuk-table__cell">35 tonnes per year</td>
+            <td class="govuk-table__cell">40 tonnes per year</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">[variable 3]</th>
+            <td class="govuk-table__cell">50 tonnes</td>
+            <td class="govuk-table__cell">4 tonnes</td>
+          </tr>
+        </tbody>
+      </table>
+          <p> We have used average data to produce this calculation. If you think you can provide more accurate data, you can <a href=#>refine your calculation</a>.</p>
+          <a class="govuk-link" href="#">See how you can improve</a>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+      <p>This paragraph has a link to <a href="/url/of/onward/page">find out more about this subject</a>.</p>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Calculate a service carbon footprint
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="start.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Sign in with GaaP (optional)</h1>
+
+      <form class="form" action="checkexistinginfo" method="post">
+
+        <p> If your service uses one or more Government as a Platform (GaaP) services you can use your SignOn details to integrate existing data into your calculation.</p>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Email address
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Password
+            </label>
+            <input class="govuk-input" id="event-name" name="event-name" type="text">
+          </div>
+          <button class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button" formaction="searchyourservice">
+            Skip
+          </button>
+        <p> <a class="page-footer-secondary-link" href="/forgot-password">Forgot your password?</a> </p>
+    </div>
+  </div>
+
+{% endblock %}
